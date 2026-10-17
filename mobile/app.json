@@ -1,1 +1,12 @@
-
+{
+  "expo": {
+    "name": "TimeCapsule",
+    "slug": "timecapsule",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "timecapsule",
+    "userInterfaceStyle": "automatic",
+    "ios": {"supportsTablet": true, "bundleIdentifier": "com.timecapsule.app"},
+    "plugins": []
+  }
+}
