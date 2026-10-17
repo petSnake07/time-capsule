@@ -1,6 +1,8 @@
-fastapi==0.115.6
-uvicorn[standard]==0.34.0
-sqlalchemy==2.0.36
-pydantic==2.10.5
-python-dotenv==1.0.1
+# Minimum versions are used so pip can select wheels compatible with the
+# installed Python version, including newer Python 3.14 environments.
+fastapi>=0.115.6
+uvicorn[standard]>=0.34.0
+sqlalchemy>=2.0.36
+pydantic>=2.12.0
+python-dotenv>=1.0.1
 
