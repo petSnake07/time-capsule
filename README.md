@@ -19,6 +19,24 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
+If your Mac uses Python 3.14 and pip still tries to compile `pydantic-core`,
+upgrade pip first:
+
+```bash
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+
+If a compatible wheel is not available for your particular Python build, use
+Python 3.13 explicitly:
+
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
 The API is available at `http://127.0.0.1:8000` and its interactive docs are at `/docs`.
 
 ## Run the Expo app
@@ -26,6 +44,7 @@ The API is available at `http://127.0.0.1:8000` and its interactive docs are at 
 ```bash
 cd mobile
 npm install
+npx expo install expo-asset
 npx expo start
 ```
 
